@@ -165,7 +165,7 @@ export class Socket<
    * Additional information that can be attached to the Socket instance and which will be used in the
    * {@link Server.fetchSockets()} method.
    */
-  public data: Partial<SocketData> = {};
+  public data: SocketData = {} as SocketData;
 
   /**
    * Whether the socket is currently connected or not.
